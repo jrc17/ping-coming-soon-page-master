@@ -1,0 +1,189 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  display: grid;
+  place-content: center;
+  text-align: center;
+  padding: 5.3125em 1.75em 2.1875em;
+  font-family: "Libre Franklin", sans-serif;
+}
+/* Typogrphy */
+h1,
+p {
+  font-weight: 300;
+}
+h1 > span,
+p {
+  color: #15202a;
+}
+h1,
+.copyright {
+  color: #969696;
+}
+input,
+button,
+p {
+  font-size: 0.75em;
+}
+h1 {
+  margin: 2em 0 0.5em;
+  font-size: 1.25rem;
+}
+h1 > span {
+  font-weight: 700;
+}
+/* img */
+header {
+  height: 52%;
+}
+header > img {
+  height: 100%;
+}
+.illustration {
+  width: 100%;
+  margin-bottom: 7.5em;
+}
+
+/* form */
+form {
+  margin: 2.5em 0 4.5em;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 0.5em;
+  padding: 0 0.625em;
+}
+input {
+  padding: 1em 2em;
+  border: 1px solid #c2d3ff;
+  width: 100%;
+}
+input::placeholder {
+  color: #c2d3ff;
+}
+.error-msg {
+  color: #ff5466;
+  font-size: 0.625rem;
+  font-style: italic;
+  margin: 0.8em 0 1.6em;
+}
+.input-error {
+  border: 1px solid #ff5466;
+}
+
+/* buttons and links */
+input,
+button {
+  border-radius: 28px;
+}
+
+button:hover,
+a:hover {
+  cursor: pointer;
+}
+button {
+  text-align: center;
+  padding: 1em 0;
+  background-color: #4c7bf3;
+  color: #fff;
+  border: none;
+  box-shadow: 0px 5px 10px 2px rgb(4c, 7b, f3 / 23%);
+}
+
+button:hover {
+  opacity: 75%;
+}
+
+.social-links,
+.social-links > a {
+  display: flex;
+  justify-content: center;
+}
+.social-links {
+  gap: 1em;
+  margin-bottom: 1.5em;
+}
+.social-links > a {
+  color: #4c7bf3;
+  border: 1px solid #c2d3ff;
+  text-decoration: none;
+  border-radius: 50%;
+  width: 2.18em;
+  height: 2.18em;
+
+  align-items: center;
+  font-size: 0.875rem;
+}
+a:hover {
+  cursor: pointer;
+  color: #fff;
+  background-color: #4c7bf3;
+}
+
+/* footer */
+.attribution {
+  margin-top: 3em;
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+/* utility */
+.hidden {
+  display: none;
+}
+/* media queries */
+@media (min-width: 768px) {
+  header {
+    height: 80%;
+  }
+  body {
+    padding: 5.375em 2.25em 2.9375em;
+  }
+  h1 {
+    font-size: 3rem;
+    margin: 1em 0 0.33em;
+  }
+  input,
+  button {
+    font-size: 1rem;
+  }
+  main p {
+    font-size: 1.25rem;
+  }
+  form {
+    flex-direction: row;
+    align-items: start;
+    justify-content: space-between;
+    gap: 1em;
+    margin: 2.5em 0 6em;
+  }
+  .email-container {
+    width: 100%;
+  }
+  input {
+    padding: 1.125em 2em;
+  }
+  .error-msg {
+    text-align: left;
+    margin-left: 3.2em;
+  }
+
+  button {
+    width: 12.5em;
+    padding: 1.125em 0;
+  }
+  .illustration {
+    margin-bottom: 4.5em;
+  }
+}
+
+@media (min-width: 1440px) {
+  body {
+    max-width: 712px;
+    margin: auto;
+  }
+}
